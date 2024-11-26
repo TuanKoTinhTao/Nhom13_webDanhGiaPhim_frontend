@@ -28,9 +28,12 @@ const Hero = ({ movies }) => {
                     <div className="movie-poster">
                       <img src={movie.poster} alt="" />
                     </div>
-                    <div className="movie-title">
-                      <h4>{movie.title}</h4>
+                    <div className="movie-introduce">
+                      <h3 style={{ color: "yellow" }}>{movie.title}</h3>
+                      <h6>Release date: {movie.releaseDate}</h6>
+                      <h6>{movie.genres?.join(" | ")}</h6>
                     </div>
+
                     <div className="movie-buttons-container">
                       <Link
                         to={`/Trailer/${movie.trailerLink.substring(

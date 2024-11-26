@@ -35,10 +35,11 @@
   justify-content: space-evenly;
   width: 100%;
 }
-.movie-title {
+.movie-introduce {
   color: white;
   display: flex;
-  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .movie-buttons-container {
